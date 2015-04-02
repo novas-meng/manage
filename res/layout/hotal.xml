@@ -1,0 +1,137 @@
+<AbsoluteLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wy1.MainActivity">
+    <AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_bg"
+    >
+
+       <TextView
+           android:id="@+id/EB"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="156dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="您的E币：888"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="30dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="文景花园"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+    </AbsoluteLayout>
+<AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_y="33dp"
+    android:background="@drawable/top_bg1"
+    
+    >
+    
+    
+    <TextView
+        android:text="宾馆"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_x="160dp"
+        />
+    </AbsoluteLayout>
+    <AbsoluteLayout
+        android:layout_y="66dp"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/mid_bg"
+    android:layout_margin="1dip"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+    <TableLayout
+        android:id="@+id/hotaltablelayout"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#A6A6A6"
+    android:layout_margin="1dip"
+    android:stretchColumns="*"
+     >
+    <TableRow
+        
+        android:background="#7CCD7C"
+        android:layout_marginTop="2dip"
+         >
+        
+        <TextView
+            
+           android:layout_margin="0.5dip"
+            android:background="#969696"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:text="店名" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:background="#969696"
+           android:layout_height="match_parent"
+           android:textColor="#ffffff"
+           android:textSize="23sp"
+            android:text="简介与地址" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:background="#969696"
+            android:textSize="23sp"
+            android:text="电话" />
+       
+        
+    </TableRow>
+    
+    
+    </TableLayout>
+    </ScrollView>
+</AbsoluteLayout>
+        <AbsoluteLayout
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_y="366dp"
+            android:background="@drawable/bottom_bg" >
+    <EditText
+         android:id="@+id/uriinput"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="http://192.168.1.125:3000"
+         android:layout_x="20dp"
+         android:layout_y="30dp"/>
+    <Button
+         android:id="@+id/bian"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_x="20dp"
+         android:layout_y="60dp"
+         android:text="变"/>
+   
+    </AbsoluteLayout>
+    </AbsoluteLayout>

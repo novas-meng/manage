@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="9">
+       <!-- 
+       <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/xxfbrecord_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="类别:二手房"/> --> 
+    	<TextView
+        android:layout_margin="5dp"
+        android:id="@+id/xxfbrecord_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="详情:asdsddddddddddddddddddd"/>
+    <TextView
+        android:id="@+id/xxfbrecord_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="价格:2000000元"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/xxfbrecord_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="价格:2000000元"/>
+    <TextView
+        android:id="@+id/xxfbrecord_remark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="价格:2000000元"
+        android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button 
+            android:id="@+id/xxfb_delete"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/xxfbdelete"/>
+    </LinearLayout>
+</LinearLayout>

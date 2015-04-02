@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:id="@+id/infoSearchRet"
+        android:background="@drawable/changyongdianhua"
+        android:layout_height="0dip"
+        android:layout_weight="80"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dip"
+        android:layout_weight="1200">
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="40"></LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="640">
+            <ListView 
+        		android:id="@+id/infoSearchListView"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"></ListView>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="40"></LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

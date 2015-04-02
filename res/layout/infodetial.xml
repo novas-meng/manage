@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:id="@+id/infodetaillayout1"
+        >
+    </LinearLayout> 
+<LinearLayout 
+    android:layout_marginTop="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="2.6"
+    android:orientation="horizontal"
+    android:id="@+id/infodetaillayout2"
+    >
+    <View
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"/>
+    <ImageView
+        android:layout_width="0px"
+        android:layout_weight="0.7"
+        android:id="@+id/infopush_ret"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@drawable/service_arrow"/>
+    <TextView
+        android:id="@+id/infoclass"
+        android:text="周边服务"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#8B8B7A"
+       android:textSize="20sp"
+       android:layout_weight="3"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+                />
+    <View
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/infodetaillayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+      
+        android:layout_weight="30">
+    <com.example.wu1.XListView 
+        
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/infoDetialList"></com.example.wu1.XListView>
+    </LinearLayout>
+</LinearLayout>

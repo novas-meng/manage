@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="切换小区"
+      android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="25sp"/>
+    <com.example.MyProfile.CornerListView
+        android:id="@+id/setting_list"  
+        android:layout_width="fill_parent"  
+        android:layout_weight="8"
+        android:background="#F0F0F0"
+        android:layout_height="0px"  
+        android:layout_margin="10dip"  
+        android:cacheColorHint="#00000000"/>
+
+</LinearLayout>

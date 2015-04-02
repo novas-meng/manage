@@ -1,0 +1,113 @@
+<AbsoluteLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_bg"
+    >
+
+       <TextView
+           android:id="@+id/EB"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="156dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="您的E币：888"
+           android:textColor="#ff0000"
+           android:textSize="20sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="30dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="文景花园"
+           android:textColor="#ff0000"
+           android:textSize="20sp" />
+
+    </AbsoluteLayout>
+<AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_y="32dp"
+    android:background="@drawable/top_bg"
+    >
+    
+    
+    <TextView
+        
+        android:text="生活服务"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_x="120dp"
+        />
+    
+    </AbsoluteLayout>
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_y="100dp">
+    <TableLayout
+        android:id="@+id/servicelayout"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#A6A6A6"
+    android:layout_margin="1dip"
+    android:stretchColumns="*"
+     >
+    
+    
+    <TableRow
+        android:layout_marginLeft="2dip"
+        android:background="#7CCD7C"
+        android:layout_marginTop="2dip"
+         >
+        
+        <TextView
+            
+           android:layout_margin="1dip"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:text="名称" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:background="#ffffff"
+           android:textColor="#000000"
+           android:textSize="23sp"
+            android:text="地址" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:textSize="23sp"
+            android:text="电话" />
+       
+        
+    </TableRow>
+    
+    
+        
+        
+    </TableLayout>
+    </ScrollView>
+        
+    </AbsoluteLayout>

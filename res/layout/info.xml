@@ -1,0 +1,108 @@
+<AbsoluteLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wy1.MainActivity">
+    <AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_bg"
+    >
+
+       <TextView
+           android:id="@+id/EB"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="156dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="您的E币：888"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="30dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="文景花园"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+       <ImageView
+           android:src="@drawable/infobg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"></ImageView>
+
+    </AbsoluteLayout>
+<AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_y="32dp"
+    android:background="@drawable/top_bg"
+    >
+    
+    <ImageButton
+        android:id="@+id/la"
+        android:src="@drawable/leftarray"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:text="周边服务"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_x="140dp"
+        />
+    </AbsoluteLayout>
+    <AbsoluteLayout
+        android:layout_y="74dp"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/mid_bg"
+    >
+    <Button
+        android:id="@+id/zb"
+        android:text="周边服务"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="20dp" />
+   
+        <Button
+            android:id="@+id/publish"
+        android:text="发布信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="150dp"
+        android:layout_y="20dp"/>
+       <Button
+            android:id="@+id/gj"
+        android:text="管家服务"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="140dp"
+        android:layout_y="100dp"/>
+<Button
+            android:id="@+id/imagetest"
+        android:text="测试图片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="180dp"
+        android:layout_y="120dp"/>
+<Button
+            android:id="@+id/nettest"
+        android:text="网络测试"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="240dp"
+        android:layout_y="200dp"/>
+    </AbsoluteLayout>
+    </AbsoluteLayout>

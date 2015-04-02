@@ -1,0 +1,116 @@
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.wy1.MainActivity">
+    
+<LinearLayout 
+    android:layout_marginTop="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="3"
+    android:background="@drawable/top_bg"
+    >
+    <TextView
+        android:id="@+id/communityclass"
+        android:text="小区消息"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#FF0000"
+       android:textSize="25sp"
+       android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+    />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="27">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        >
+    <LinearLayout
+    
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:orientation="vertical"
+    
+    android:layout_margin="1dip"
+    >
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_margin="10dp"
+        android:text="标题"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:textSize="27sp"/>
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="0px"
+       android:orientation="vertical"
+       android:layout_weight="3">
+    
+    <TextView
+        android:id="@+id/info_content"
+        android:text="内容"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+    
+   </LinearLayout>
+   <LinearLayout
+       
+       android:layout_width="fill_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content"
+       >
+   <ImageView
+       android:id="@+id/info_image1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       
+       
+      
+       android:layout_margin="5dp"
+       android:layout_gravity="center_horizontal"/>
+   <ImageView
+       android:id="@+id/info_image2"
+     android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+      
+       
+       
+       android:layout_margin="5dp"
+       android:layout_gravity="center_horizontal"/>
+   <ImageView
+       android:id="@+id/info_image3"
+     android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+      
+       
+       
+       android:layout_margin="5dp"
+       android:layout_gravity="center_horizontal"/>
+   <ImageView
+       android:id="@+id/info_image4"
+   android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+    
+       
+      
+       android:layout_margin="5dp"
+       android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+    </LinearLayout>

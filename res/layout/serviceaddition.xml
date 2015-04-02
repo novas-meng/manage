@@ -1,0 +1,117 @@
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.wy1.MainActivity">
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/bar_bg" >
+
+    </LinearLayout>
+<LinearLayout 
+    android:layout_marginTop="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="2.6"
+    android:orientation="horizontal"
+    android:background="@drawable/top_bg"
+    >
+    <View
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"/>
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@drawable/service_arrow"/>
+    <TextView
+        android:id="@+id/serviceclass"
+        android:text="管家服务"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#8B8B7A"
+       android:textSize="20sp"
+       android:layout_weight="3"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+                />
+    <View
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+    <ScrollView
+        android:layout_weight="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+    <TableLayout
+        android:id="@+id/servicelayout"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:layout_margin="1dip"
+    
+    android:stretchColumns="*"
+     >
+    
+    
+    <TableRow
+        android:id="@+id/service_row"
+        android:layout_margin="0dip"
+        android:background="#4682B4"
+       
+         >
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="2"
+           android:layout_margin="0.5dip"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="项目" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:background="#ffffff"
+           android:layout_width="0px"
+            android:layout_weight="3"
+           android:textColor="#000000"
+           android:textSize="15sp"
+            android:text="收费" />
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="2"
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:textSize="15sp"
+            android:text="预约" />
+        
+       
+        
+    </TableRow>
+    
+    
+        
+        
+    </TableLayout>
+    </ScrollView>
+        
+    </LinearLayout>

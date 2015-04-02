@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>    
+	<uses-permission android:name="android.permission.CAMERA"/>		
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+ 	<uses-permission android:name="android.permission.CALL_PHONE"/>
+ 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+ 	
+ 	 
+ 	
+ 	 
+ 	    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tuisong"
+        android:label="小区e家人"
+        android:theme="@android:style/Theme.Light.NoTitleBar" 
+        android:largeHeap="true"
+        android:name="com.example.utils.MyApplication"
+        >
+        <activity
+         android:name="com.example.welcome.welcomeActivity"             
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.communitynews.CommunityInfoActivity"
+                             android:screenOrientation="portrait"
+                                                                       android:configChanges="orientation|keyboardHidden"
+                             
+            ></activity>
+          <activity android:name="com.example.logIn.logInActivity"
+                             android:screenOrientation="portrait"
+                                                                       android:configChanges="orientation|keyboardHidden"
+                             
+            ></activity>
+        <activity android:name="com.example.logIn.FindNewPassword"
+                             android:screenOrientation="portrait"
+                                                                       android:configChanges="orientation|keyboardHidden"
+                             
+            ></activity>
+        <activity android:name="com.example.communitynews.CommunityActivity"
+                                         android:screenOrientation="portrait"
+                                          android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.manage.HomePage"
+                                         android:screenOrientation="portrait"
+                                         android:configChanges="orientation|keyboardHidden"
+                                         
+            
+            ></activity>  
+        <activity android:name="com.example.manage.TSBXActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>  
+        <activity android:name="com.example.manage.MainActivity" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.manage.MainMenu" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>        
+        <activity android:name="com.example.manage.communityNewsActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            />      
+        <activity android:name="com.example.manage.TopicNews" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+             ></activity>
+         <activity android:name="com.example.register.readActivity" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+             ></activity>
+        <activity android:name="com.example.manage.notificationManager" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity> 
+        <activity android:name="com.example.register.registerActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>  
+        <activity android:name="com.example.happyhome.HappyhomeActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>  
+        <activity android:name="com.example.pet.petActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.wu1.shootphotoActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.infoPush.infoPushActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.infoPush.infoDetial"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.infoPush.infoUploadActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.infoSearch.infoSearchActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.infoSearch.xxcxActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.Around.AroundActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>         
+        <activity android:name="com.example.Around.AroundAdditionActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tools.ImageShow"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+            <activity
+            android:name="com.example.Around.AroundInfoActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.Around.AroundPublishActivity" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >   </activity>
+        
+        <activity android:name="com.example.tools.ScaleImageFromSdcardActivityforpic"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tools.PicturesShowActivityforpic"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            > </activity>
+        <activity android:name="com.example.yy.YypasscardActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.Service.ServiceActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.Service.ServiceAdditionActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            > </activity>
+        
+        <activity android:name="com.example.MyProfile.MyProfileTsbxActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            > </activity>
+        <activity android:name="com.example.MyProfile.MyProfileXxfbActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >  </activity>
+        <activity android:name="com.example.MyProfile.MyProfileYyActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.MyProfile.MyProfilebbmActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >  </activity>
+        <activity android:name="com.example.MyProfile.SwitchCommunityActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.Service.ServiceRebuyActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            > </activity>
+        <activity android:name="com.example.MyProfile.MyInfoActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            > </activity>
+        <activity android:name="com.example.MyProfile.MyInfoAdditionActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            > </activity>
+        <activity android:name="com.example.MyProfile.MyProfileActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >  </activity>
+        <activity android:name="com.example.MyProfile.MyInfoChangeActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >  </activity>
+         <activity android:name="com.example.MyProfile.FindPasswordActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >  </activity>
+        <activity android:name="com.example.MyProfile.MainActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            >  </activity>
+        
+        <activity android:name="com.example.bbm.bbmHomePage"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>  
+        <activity android:name="com.example.bbm.bbmMainActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.bbm.bbmPublishActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.bbm.bbmRefreshActivity" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity> 
+        <activity android:name="com.example.yy.YYMainActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.yy.YYHomePage"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.yy.YYRefreshActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity> 
+        <activity android:name="com.example.user.UserRealInformationActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity> 
+        <activity android:name="com.example.tsbx.CameraActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tsbx.LoginActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tsbx.MainActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tsbx.PicturesShowActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tsbx.ScaleImageFromSdcardActivity"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.example.tsbx.shootphoto" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+             ></activity> 
+              <activity android:name=".wxapi.WXEntryActivity"
+                  android:exported="true" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>      
+        <activity android:name="com.example.tsbx.ChatActivity" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+             ></activity>  
+        <activity android:name="com.example.tsbx.ShowImageActivity" 
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>    
+              <activity android:name="com.example.infoSearch.lifeSearch"
+                                         android:screenOrientation="portrait"
+                                           android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>       
+             <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.example.yy.PushService" android:label="Tokudu Push Notifications Service"></service>   
+        </application>
+
+</manifest>

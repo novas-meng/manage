@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePage>
+    <Image>
+        <link>www.baidu.com</link>
+        <content>关于改革</content>
+        <count>3</count>
+        <news>孟凡山</news>
+    </Image>
+    <Image>
+        <link>www.163.com</link>
+        <content>关于作业</content>
+        <count>4</count>
+        <news>何靖雅</news>
+    </Image>
+</HomePage>

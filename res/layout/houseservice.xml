@@ -1,0 +1,142 @@
+<AbsoluteLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.wy1.Around">
+    <AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_bg"
+    >
+
+       <TextView
+           android:id="@+id/EB"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="156dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="您的E币：888"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="30dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="文景花园"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+    </AbsoluteLayout>
+<AbsoluteLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_y="32dp"
+    android:background="@drawable/top_bg"
+    >
+    
+    <TextView
+       
+        android:text="﹤"
+        android:textColor="#000000"
+        android:textSize="27sp"
+        android:layout_x="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:text="家居服务"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_x="50dp"
+        />
+    <TextView
+        android:text="请点击"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_x="240dp"
+        
+       
+        />
+    </AbsoluteLayout>
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_y="100dp">
+    <TableLayout
+        android:id="@+id/livelayout"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#A6A6A6"
+    android:layout_margin="1dip"
+    android:stretchColumns="*"
+     >
+    
+    
+    <TableRow
+        android:layout_marginLeft="2dip"
+        android:background="#7CCD7C"
+        android:layout_marginTop="2dip"
+         >
+        
+        <TextView
+            
+           android:layout_margin="1dip"
+            android:background="#969696"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:text="项目" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:background="#969696"
+      
+           android:textColor="#ffffff"
+           android:textSize="23sp"
+            android:text="收费说明" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:textColor="#ffffff"
+            android:background="#969696"
+            android:textSize="23sp"
+            android:text="预约" />
+       
+        
+    </TableRow>
+    
+    
+    </TableLayout>
+    </ScrollView>
+        <EditText
+         android:id="@+id/uriinput"
+         android:layout_width="wrap_content"
+         android:text="http://192.168.1.125:3000"
+         android:layout_height="wrap_content"
+         android:layout_x="20dp"
+         android:layout_y="30dp"/>
+     <Button
+         android:id="@+id/bian"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_x="20dp"
+         android:layout_y="60dp"
+         android:text="变"/>
+    </AbsoluteLayout>

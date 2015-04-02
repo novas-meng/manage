@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:text="测试"
+        android:id="@+id/net1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   
+       <TableLayout
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#A6A6A6"
+    android:layout_margin="1dip"
+    android:stretchColumns="*"
+        android:id="@+id/tablelayout1"
+        android:layout_marginTop="30dp">
+        <TableRow
+        
+        android:background="#7CCD7C"
+        android:layout_marginTop="2dip"
+         >
+        
+        <TextView
+            
+           android:layout_margin="0.5dip"
+            android:background="#969696"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:text="店名" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:background="#969696"
+           android:layout_height="match_parent"
+           android:textColor="#ffffff"
+           android:textSize="23sp"
+            android:text="简介与地址" />
+        <TextView
+             android:gravity="center"
+            android:layout_margin="0.5dip"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:background="#969696"
+            android:textSize="23sp"
+            android:text="电话" />
+       
+        
+    </TableRow>
+    </TableLayout>
+</LinearLayout>

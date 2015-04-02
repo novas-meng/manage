@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <LinearLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    
+     >
+     <Button 
+         android:id="@+id/bbm_item_voice"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right"
+         android:background="@drawable/voicesend"
+         android:gravity="right"
+         android:clickable="true"
+         android:onClick="bbmMainVoicePlay"
+         />
+  </LinearLayout>
+  <Button 
+      android:id="@+id/bbm_item_phone"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/buttonpressed"
+     android:onClick="CallPhone"
+    />
+  <TextView 
+      android:layout_width="fill_parent"
+      android:layout_height="1dip"
+      android:background="@drawable/bbm_line"
+      ></TextView>
+</LinearLayout>

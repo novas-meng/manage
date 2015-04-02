@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/chatView"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white"
+  android:clickable="true"
+   >
+		<RelativeLayout 
+        android:id="@+id/rl_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/activity_main_tab_title_height"
+		android:layout_alignParentTop="true"
+		android:gravity="center_vertical"  > 
+  			
+			<TextView
+      		    android:id="@+id/nickName"
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:layout_centerInParent="true"
+        		android:textSize="@dimen/activity_Textsize20_4.0"		
+				/> 
+  	    <Button 
+				android:id="@+id/tsbx_phone"
+			    android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+			    android:background="@drawable/buttonpressed"
+				android:onClick="btnClick"/>
+		</RelativeLayout>
+	  <LinearLayout 
+	      android:id="@+id/bbm_menu_layout"
+	      android:layout_above="@+id/rl_bottom"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:background="@drawable/bbm_publish_background"
+	      android:orientation="vertical"
+	      >
+  	    <LinearLayout 
+  	        android:layout_width="fill_parent"
+  	        android:layout_height="15dip"
+  	        android:layout_weight="0.5"
+  	        >
+  	        
+  	    </LinearLayout>
+  	      <LinearLayout 
+  	        android:layout_width="fill_parent"
+  	        android:layout_height="fill_parent"
+  	        android:orientation="horizontal"
+  	        
+  	        >
+  	        <LinearLayout 
+  	            android:layout_width="15dip"
+  	            android:layout_height="wrap_content"
+  	            ></LinearLayout>
+  	           <ImageView
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:background="@drawable/bbm_publish_phone"
+	          android:layout_weight="1.2"
+	          />
+	        <EditText
+	          android:id="@+id/bbm_publish_phone"
+	          android:inputType="number"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:background="@null"
+	          android:layout_weight="1"
+	          />
+	          <Button
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	          android:background="@null"
+	          android:layout_weight="1.2"
+	          />
+	            <LinearLayout 
+  	            android:layout_width="20dip"
+  	            android:layout_height="wrap_content"
+  	            ></LinearLayout>
+  	      </LinearLayout> 
+	  </LinearLayout>
+     <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       >    
+	        <include
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            layout="@layout/bbm_facelayout" />
+	            
+    </RelativeLayout> 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_layout"
+        android:layout_above="@id/bbm_menu_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dp" 
+         android:scrollbarStyle="outsideOverlay"
+        />
+    
+</RelativeLayout>

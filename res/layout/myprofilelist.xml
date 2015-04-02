@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <LinearLayout
+       android:layout_marginTop="5dp"
+       android:layout_width="fill_parent"
+       android:layout_height="0px"
+       android:orientation="horizontal"
+       android:layout_weight="1.5">
+       <View
+           android:layout_height="fill_parent"
+           android:layout_width="0px"
+           android:layout_weight="1"/>
+       <LinearLayout
+           android:layout_width="0px"
+           android:layout_weight="20"
+           android:layout_height="fill_parent"
+           android:background="@drawable/myprofile_top_bg">
+           
+           <ImageView
+               android:layout_marginLeft="0dp"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:src="@drawable/myprofile"/>
+           </LinearLayout>
+       <View
+           android:layout_height="fill_parent"
+           android:layout_width="0px"
+           android:layout_weight="1"/>
+       </LinearLayout>
+       
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="0px"
+           android:layout_marginTop="5dp"
+           android:orientation="horizontal"
+           android:layout_weight="5.1">
+       <View
+           android:layout_width="0px"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"/>
+    <com.example.MyProfile.CornerListView
+        android:id="@+id/setting_list1"  
+        android:scrollbars="none"
+        android:layout_width="0px"  
+        android:layout_weight="20"
+        android:background="@drawable/corner_listview_bg"
+         android:layout_height="fill_parent"
+          
+        android:cacheColorHint="#00000000"/>
+    <View
+           android:layout_width="0px"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"/>
+</LinearLayout>
+<LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="0px"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal"
+           android:layout_weight="8.5">
+       <View
+           android:layout_width="0px"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"/>
+    <com.example.MyProfile.CornerListView
+        android:id="@+id/setting_list2"  
+        android:layout_width="0px"  
+         android:scrollbars="none"
+        
+        android:layout_weight="20"
+        android:background="@drawable/corner_listview_bg"
+         android:layout_height="fill_parent"
+          
+        android:cacheColorHint="#00000000"/>
+    <View
+           android:layout_width="0px"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"/>
+</LinearLayout>
+<LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="fill_parent"
+       android:layout_height="0px"
+       android:orientation="horizontal"
+       android:layout_weight="1">
+       <View
+           android:layout_height="fill_parent"
+           android:layout_width="0px"
+           android:layout_weight="1"/>
+       <LinearLayout
+           
+           android:layout_width="0px"
+           android:layout_weight="20"
+           android:layout_height="fill_parent"
+           android:background="@drawable/myprofile_top_bg">
+           
+           <ImageView
+               android:id="@+id/myprofile_update"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:src="@drawable/myprofile_update"/>
+           </LinearLayout>
+       <View
+           android:layout_height="fill_parent"
+           android:layout_width="0px"
+           android:layout_weight="1"/>
+       </LinearLayout>
+</LinearLayout>

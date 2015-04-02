@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <AbsoluteLayout 
+    android:layout_weight="1"
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:background="@drawable/bar_bg"
+    >
+   
+       <TextView
+           android:id="@+id/EB"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="156dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="您的E币：888"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_x="30dp"
+           android:layout_y="5dp"
+           android:gravity="center"
+           android:text="文景花园"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+    </AbsoluteLayout>
+<AbsoluteLayout 
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:background="#000000" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="我的账户"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:textColor="#ffffff"
+        android:background="#ff0000"/>
+    </AbsoluteLayout>    
+    
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_weight="12"
+     android:layout_width="fill_parent"
+     android:layout_height="0px"
+     >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+   <View
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_marginLeft="30dp"
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/info"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="我的信息"
+       android:textColor="#4B0082"
+      
+       android:textSize="25sp"/>
+   <TextView
+       android:id="@+id/infoarray" 
+      
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+   <View
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+      
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/switchcommunity"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="切换小区"
+       android:textColor="#4B0082"
+       android:layout_x="100dp"
+       android:layout_y="170dp"
+       android:textSize="25sp"/>
+   <TextView 
+       android:id="@+id/switcharray"
+       android:layout_x="300dp"
+       android:layout_y="170dp"
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/>
+   </LinearLayout>
+    
+   <View 
+       
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#00EE00"/>
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+     <View
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/myebit"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="我的E币"
+       android:textColor="#4B0082"
+       
+       android:textSize="25sp"/>
+   <TextView 
+       android:id="@+id/myebitarray"
+       
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/> 
+       </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+       <View
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/mybbm"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="我的帮帮忙"
+       android:textColor="#4B0082"
+       
+       android:textSize="25sp"/>
+   <TextView 
+       android:id="@+id/mybbmarray"
+       
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/> 
+       </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+       <View
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/bxts"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="报修投诉记录"
+       android:textColor="#4B0082"
+       
+       android:textSize="25sp"/>
+   <TextView 
+       android:id="@+id/bxtsarray"
+       
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/>
+   </LinearLayout>
+   <View 
+      
+       android:layout_width="fill_parent"
+       android:layout_height="10dp"
+       android:background="#00EE00"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+   <View
+       
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/xxfb"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="信息发布记录"
+       android:textColor="#4B0082"
+       
+       android:textSize="25sp"/>
+   <TextView 
+       android:id="@+id/xxfbarray"
+       
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        
+   <View
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+      
+       android:background="#ff0000" />
+   <TextView
+       android:id="@+id/yy"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="预约记录"
+       android:textColor="#4B0082"
+       
+       android:textSize="25sp"/>
+   <TextView 
+       android:id="@+id/yyarray"
+       
+       android:text=">"
+       android:textSize="30sp"
+       android:textColor="#000000"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"/>
+   </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

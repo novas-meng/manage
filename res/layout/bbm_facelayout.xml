@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.bbm.bbmfacelayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bbmfacelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bbm_facelayout_background" >
+
+        <ImageButton
+            android:id="@+id/bbm_facelayout_voice"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/bbm_facelayout_voice"
+             />
+        <Button
+            android:id="@+id/bbm_publish_confirm"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bbm_publish_publish"
+            android:onClick="btnClick"
+            />
+     <LinearLayout 
+         android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/bbm_publish_confirm"
+            android:layout_toRightOf="@id/bbm_facelayout_voice"
+            android:background="@drawable/bbm_phone_edit"
+         >
+         <EditText
+            android:id="@+id/bbm_publish_textarea"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="18sp" />
+     </LinearLayout>     
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moreChoose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_input"
+        android:background="#f6f5f5"
+        android:visibility="gone" >
+        <Button 
+            android:id="@+id/bbm_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bbm_facelayout_pressvoice"
+            ></Button>
+        <ImageButton
+            android:id="@+id/bbm_publish_voice"
+            android:layout_below="@id/bbm_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bbm_facelayout_micr"
+            />
+
+    
+    </RelativeLayout>
+
+</com.example.bbm.bbmfacelayout>
